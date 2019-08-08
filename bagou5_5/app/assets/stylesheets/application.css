@@ -1,0 +1,49 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+.gossip_intro{
+	margin: 50px 15px auto 15px;
+}
+
+.new_gossip_link{
+	background-color: #eee;
+
+	padding: 10px 12px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+
+	border: 1px solid #ddd;
+
+	max-width: 350px;
+
+	text-align: center
+}
+
+.gossip_card{
+	min-width: 300px;
+
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+	margin: 15px;
+
+	border-radius: 10px;
+	border: 1px solid #ddd;
+}
+
+.gossips_body{
+	max-width: 1200px;
+}

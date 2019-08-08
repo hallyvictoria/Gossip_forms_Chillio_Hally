@@ -1,0 +1,11 @@
+<h1>Gossips#show</h1>
+<p>Find me in app/views/gossips/show.html.erb</p>
+
+<h4><%= @gossip.title %></h4>
+<p>" <%= @gossip.content %> "</p>
+  <br>
+  <%= link_to @gossip.user.first_name, user_path(@gossip.user.id) %>
+  de <%= link_to @gossip.user.city.name, city_path(@gossip.user.city.id) %>
+  <br><br>
+  <%= link_to "Editer le gossip", edit_gossip_path(@gossip.id) %><br>
+  <%= link_to "Detruire le gossip", gossip_path(@gossip.id), method: :delete %><br/>

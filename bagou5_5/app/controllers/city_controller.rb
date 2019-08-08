@@ -1,0 +1,24 @@
+class CityController < ApplicationController
+  def index
+  end
+
+  def show
+    @city = City.find(params[:id])
+    @city_gossips = City.find(params[:id]).gossips.all
+  end
+
+  def new
+  end
+
+  def create
+  end
+
+  def edit
+  end
+
+  def update
+  end
+
+  def destroy
+  end
+end

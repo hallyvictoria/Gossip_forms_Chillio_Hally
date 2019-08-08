@@ -1,0 +1,23 @@
+<h1>Vous êtes bien arrivé à <%= @city.name %></h1>
+
+
+<body>
+	<div class = "gossips_body mx-auto">
+		<div class = "gossip_intro">
+			<h1>Vous êtes bien arrivé à <%= @city.name %></h1>
+
+			<h4>Vous avez </h1>
+		</div>
+
+		<div class = "row mx-auto">
+			<% @city_gossips.each do |gossip| %>
+
+				<div class = "col-sm bg-light gossip_card">
+					<h3>"<%= gossip.title %>"</h3>
+					<h5>Auteur :</b> <%= gossip.user.first_name %></h5>
+					<%= link_to "Lire le gossip", gossip_path(gossip.id) %>
+				</div>
+			<% end %>
+		</div>
+	</div>
+</body>

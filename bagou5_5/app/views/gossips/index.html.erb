@@ -1,0 +1,20 @@
+<body>
+	<div class = "gossips_body mx-auto">
+		<div class = "gossip_intro">
+			<h1>Bienvenue sur The Gossip Project by Gitboiboi</h1>
+			<h3 class = "new_gossip_link"><%= link_to "Créer un nouveau potin", new_gossip_path %></h3>
+		</div>
+
+		<div class = "row mx-auto">
+
+			<% @gossips.each do |gossip| %>
+				<div class = "col-sm bg-light gossip_card">
+					<h3>"<%= gossip.title %>"</h3>
+					<h5>Auteur : <%= gossip.user.first_name %></h5>
+					<%= link_to "Lire le gossip", gossip_path(gossip.id) %>
+				</div>
+
+			<% end %>
+		</div>
+	</div>
+</body>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bagou4</title>
+
+    <nav class="navbar navbar-dark bg-dark">
+      <%= link_to "LOGO", root_path %>
+      <%= link_to "Gossips", root_path %>
+      <%= link_to "Team", team_index_path %>
+      <%= link_to "Contact", contact_index_path %>
+      <%= link_to "S'inscrire", new_user_path %>
+      <%= link_to "Se connecter", contact_index_path %>
+    </nav>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
